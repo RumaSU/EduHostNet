@@ -21,7 +21,7 @@
                 </div>
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
-                        <a href="{{ route('posts.create') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
+                        <a href="{{ route('create') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -42,10 +42,10 @@
                                         <td>{!! $post->content !!}</td>
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                action="{{ route('posts.destroy', $post->id) }}" method="POST">
-                                                <a href="{{ route('posts.show', $post->id) }}"
+                                                action="{{ route('destroy', $post->id) }}" method="POST">
+                                                <a href="{{ route('show', $post->id) }}"
                                                     class="btn btn-sm btn-dark">SHOW</a>
-                                                <a href="{{ route('posts.edit', $post->id) }}"
+                                                <a href="{{ route('edit', $post->id) }}"
                                                     class="btn btn-sm btn-primary">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
