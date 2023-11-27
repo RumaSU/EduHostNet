@@ -50,7 +50,7 @@
                     <div class="colOpenNavMenu pt-8 absolute -right-full top-full -translate-x-0 group-hover:block opacity-0 invisible" style="transition: all .1s ease-in-out;" id="navMobsWrapper" onmouseover="openNavWrapperMobile()" onmouseleave="closeNavWrapperMobile()" >
                         <ul class="space-y-2">
                             <li class="flex min-w-[11rem] h-12 relative">
-                                <a href="/profil" class="flex w-full h-full items-center justify-center rounded-lg hover:text-orange-700 cursor-default bg-slate-950/100 text-base px-4 transition-all absolute duration-100 ease-linear" style="left: 200%;" id="itmNavWrapMobile-1">Status</a>
+                                <a href="/status" class="flex w-full h-full items-center justify-center rounded-lg hover:text-orange-700 cursor-default bg-slate-950/100 text-base px-4 transition-all absolute duration-100 ease-linear" style="left: 200%;" id="itmNavWrapMobile-1">Status</a>
                             </li>
                             @auth
                                 <li class="flex min-w-[11rem] h-12 relative">

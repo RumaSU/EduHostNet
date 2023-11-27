@@ -22,9 +22,6 @@ use App\Http\Middleware\UserLogin;
 */
 
 Route::get('/', [homepageController::class, 'index']);
-Route::get('/dashboard/konten', function () {
-    return view('pages.dashboard.konten.index');
-});
 
 // Route::view('/dashboard/konten/', 'pages.dashboard.konten.index');
 
@@ -34,7 +31,7 @@ Route::get('/status', [statusController::class, 'index']);
 Route::get('/profil/{username}', [Profil::class, 'show']);
 
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    // Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::post('/logout', [UsersLogin::class, 'logout']);
     Route::post('/delete', [UsersModelController::class, 'destroy']);
     Route::post('/update-image', [UsersImageModelsController::class, 'update']);
